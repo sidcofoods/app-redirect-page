@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App Redirect</title>
+</head>
+<body>
+  <h1>Welcome to Our App</h1>
+  <p>Choose your device:</p>
+  <button onclick="redirectToPlayStore()">Download on Google Play</button>
+  <button onclick="redirectToAppStore()">Download on the App Store</button>
+
+  <script>
+    function redirectToPlayStore() {
+      window.location.href = 'https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_PACKAGE_NAME';
+    }
+
+    function redirectToAppStore() {
+      window.location.href = 'https://apps.apple.com/app/YOUR_IOS_APP_ID';
+    }
+  </script>
+</body>
+</html>
